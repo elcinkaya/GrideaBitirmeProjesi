@@ -1,0 +1,27 @@
+{
+  "name": "grideabitirmeprojesi",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elcinkaya/GrideaBitirmeProjesi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elcinkaya/GrideaBitirmeProjesi/issues"
+  },
+  "homepage": "https://github.com/elcinkaya/GrideaBitirmeProjesi#readme",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10"
+  }
+}
