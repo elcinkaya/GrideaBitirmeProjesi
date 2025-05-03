@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(253, 252, 251);
+}
+
+/*=================== NAV ===================*/
+.nav_header{
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(253, 252, 251);
+  align-content: center;
+}
+
+#nav-name{
+    color: rgba(0, 0, 0, 0.918);
+    text-decoration: none;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -65px;
+    margin-right:  60px;
+}
+
+.nav-header{
+margin-left: 50px;
+}
+
+.nav_link{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+
+#yaz{
+    background-color: rgba(135, 206, 250, 0.651);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+/*=================== LOGIN ===================*/
+
+ 
