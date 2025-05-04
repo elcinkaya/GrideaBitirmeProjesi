@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giriş Yap</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="../public/style.css">
 </head>
-<body>
-    
+<body class="login_body">
+    <h2 id="login">Login</h2>
+    <form action="" method="POST">
+        <div class="box">
+            <input type="text" placeholder="Username" class="type"> <br>
+            <input type="password" placeholder="Password" class="type"> <br>
+            <button type="submit" id="button">Login</button> <br>
+            <p class="go">Don't you have an account? <a href="../views/register.html">Register</a></p> 
+            <p class="go">Go <a href="../views/index.html">Home</a></p>
+        </div>
+    </form>
 </body>
 </html>

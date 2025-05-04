@@ -1,4 +1,4 @@
-body{
+.index_body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(253, 252, 251);
 }
@@ -32,6 +32,7 @@ margin-left: 50px;
 .nav_link{
     color: rgb(15, 15, 15);
     text-decoration: none;
+    font-weight: lighter;
 }
 
 #yaz{
@@ -42,6 +43,44 @@ margin-left: 50px;
     text-align: center;
 }
 
-/*=================== LOGIN ===================*/
+/*=================== LOGIN ve REGISTER===================*/
+.login_body{
+    background-color: rgba(182, 250, 233, 0.856);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#login{
+    color: rgb(2, 99, 99);
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(2, 99, 99);
+}
+
+.box{
+    background-color: rgb(255, 248, 248);
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    width: max-content;
+    padding: 20px 20px 20px 20px;
+    margin-left: 535px;
+}
+
+.go{
+    font-size: smaller;
+}
+
+#button{
+    background-color: rgb(2, 99, 99);
+    color: white;
+    text-align: center;
+    padding: 5px 70px 5px 70px;
+    font-size: 15px;
+}
 
  
