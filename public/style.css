@@ -52,6 +52,7 @@ margin-left: 50px;
 
 #login{
     color: rgb(2, 99, 99);
+    margin-top: 145px;
 }
 
 a{
@@ -68,7 +69,27 @@ a{
     height: 200px;
     width: max-content;
     padding: 20px 20px 20px 20px;
-    margin-left: 535px;
+    margin-left: 545px;
+    margin-top: 10px;
+}
+
+.box2{
+    background-color: rgb(255, 248, 248);
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+    width: max-content;
+    padding: 20px 30px 20px 30px;
+    margin-left: 550px;
+    margin-top: 10px;
+}
+
+.type{
+    border: 0px;
+    padding-top: 10px;
+    background-color: rgb(255, 248, 248);
+    border-bottom: 2px solid rgb(2, 99, 99);
 }
 
 .go{
@@ -81,6 +102,7 @@ a{
     text-align: center;
     padding: 5px 70px 5px 70px;
     font-size: 15px;
+    border: 0px;
 }
 
  
