@@ -45,20 +45,20 @@ margin-left: 50px;
 
 /*=================== LOGIN ve REGISTER===================*/
 .login_body{
-    background-color: rgba(182, 250, 233, 0.856);
+    background-color: #e7c6ff;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 #login{
-    color: rgb(2, 99, 99);
+    color: #a898d8;
     margin-top: 145px;
 }
 
 a{
     text-decoration: none;
     font-weight: bold;
-    color: rgb(2, 99, 99);
+    color: #a898d8;
 }
 
 .box{
@@ -89,7 +89,7 @@ a{
     border: 0px;
     padding-top: 10px;
     background-color: rgb(255, 248, 248);
-    border-bottom: 2px solid rgb(2, 99, 99);
+    border-bottom: 2px solid #a898d8;
 }
 
 .go{
@@ -97,7 +97,7 @@ a{
 }
 
 #button{
-    background-color: rgb(2, 99, 99);
+    background-color: #a898d8;
     color: white;
     text-align: center;
     padding: 5px 70px 5px 70px;
