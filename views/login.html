@@ -8,13 +8,13 @@
 </head>
 <body class="login_body">
     <h2 id="login">Login</h2>
-    <form action="" method="POST">
+    <form action="/login" method="POST">
         <div class="box">
-            <input type="text" placeholder="Username" class="type"> <br> <br>
-            <input type="password" placeholder="Password" class="type"> <br> <br>
+            <input type="text" name="username" placeholder="Username" class="type"> <br> <br>
+            <input type="password" name="password" placeholder="Password" class="type"> <br> <br>
             <button type="submit" id="button">Login</button> <br>
-            <p class="go">Don't you have an account? <a href="../views/register.html">Register</a></p> 
-            <p class="go">Go <a href="../views/index.html">Home</a></p>
+            <p class="go">Don't you have an account? <a href="/register">Register</a></p> 
+            <p class="go">Go <a href="/">Home</a></p>
         </div>
     </form>
 </body>

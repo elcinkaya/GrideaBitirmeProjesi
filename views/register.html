@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../public/style.css">
 </head>
 <body class="login_body">
-    <form action="" method="POST">
+    <form action="/register" method="POST">
         <h2 id="login">Register</h2>
         <div class="box2">
-            <input type="text" placeholder="Username" class="type"> <br> <br>
-            <input type="password" placeholder="Password" class="type"> <br> <br>
+            <input type="text" name="username" placeholder="Username" class="type"> <br> <br>
+            <input type="password" name="password" placeholder="Password" class="type"> <br> <br>
             <button type="submit" id="button">Register</button>
-            <p class="go">Don't you have an account? <a href="../views/login.html"> Login</a></p> 
-            <p class="go">Go <a href="../views/index.html">Home</a></p>
+            <p class="go">Don't you have an account? <a href="/login">Login</a></p> 
+            <p class="go">Go <a href="/">Home</a></p>
         </div>
     </form>
 </body>

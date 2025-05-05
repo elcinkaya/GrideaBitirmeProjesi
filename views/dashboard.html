@@ -3,20 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../public/style.css">
 </head>
 <body>
-    <nav>
-        
+    <header class="nav_header">
+        <nav class="nav-header">
+            <a href="/" id="nav-name"><h1>Gridea Forum</h1></a>
+            <div class="nav_list">
+                <a href="/logout" class="nav_link">Çıkış Yap</a>
+                <a href="/type" class="nav_link">Yaz</a>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <div id="posts-container">
 
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Gridea | AYBÜ BİLTEK Kuruluşu</p>
+        </div>
+    </footer>
 
+    <script>
+        fetch('/api/posts')
+        .then(res => res.json())
+        .then( posts => {
+            const container = document.getElementById('posts-container');
 
-
-    </nav>
-
-
-
+            posts.forEach(post => {
+                const postDiv = document.createElement('div');
+                postDiv.classList.add('post');
+                postDiv.innerHTML = `
+                    <h3>${post.title}</h3>
+                    <p>${post.content}</p>
+                    <p><strong>Kategori:</strong> ${post.category}</p>
+                    <hr>
+                `;
+                container.appendChild(postDiv);
+            });
+        })
+        .catch(error => {
+            alert('Yazılar alınırken hata oluştu.');   
+        });
+    </script>
 
 </body>
 </html>
