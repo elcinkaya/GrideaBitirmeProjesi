@@ -10,3 +10,11 @@ const connection = mysql.createConnection({
 module.exports = connection;
 
 const dbConfig = require('./dbConfig');
+
+pool.getConnection((err, connection) => {
+    if (err) {
+      console.error('Bağlantı hatası:', err);
+    } else {
+      console.log('Başarıyla bağlandık');
+      connection.release();  // Bağlantıyı serbest bırak
+   } });

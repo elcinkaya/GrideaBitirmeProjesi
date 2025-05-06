@@ -4,6 +4,7 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 
 const app = express();
+app.use (express.static(path.join(__dirname, 'public')));
 
 
 // === text oluşturma sayfası ===
@@ -19,7 +20,7 @@ app.use (session({
     saveUninitialized: true
 }));
 
-app.use (express.static(path.join(__dirname, 'public')));
+
 
 const pageRoutes = require('./routes/pageRoutes');
 const authRoutes = require('./routes/authRoutes');
