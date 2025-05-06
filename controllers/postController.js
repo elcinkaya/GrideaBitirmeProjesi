@@ -79,3 +79,22 @@ exports.deletePost = async (req, res) => {
       res.status(500).send('Silme işlemi sırasında hata oluştu.');
     }
 };
+exports.getUserPosts = async (req, res) => {
+  if (!req.session.user) {
+    return res.status(401).send('Unauthorized');
+  }
+
+  try {
+    const connection = await mysql.createConnection(dbConfig);
+    const [rows] = await connection.execute(
+      'SELECT * FROM posts WHERE user_id = ? ORDER BY created_at DESC',
+      [req.session.user.id]
+    );
+    await connection.end();
+    res.json(rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Kullanıcı gönderileri alınamadı.');
+  }
+};
+
