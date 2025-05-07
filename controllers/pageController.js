@@ -17,5 +17,5 @@ exports.getDashboardPage = (req, res) => {
 };
 
 exports.getWritePage = (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/yaz.html'));
+    res.sendFile(path.join(__dirname, '../views/type.html'));
   };
