@@ -1,120 +1,141 @@
-.index_body{
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+.index_body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(253, 252, 251);
 }
 
 /*=================== NAV ===================*/
-.nav_header{
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgb(253, 252, 251);
-  align-content: center;
+.nav_header {
+    width: 100%;
+    margin-top: 35px;
+    top: 0;
+    left: 0;
+    background-color: rgb(253, 252, 251);
+    align-content: center;
 }
 
-#nav-name{
+#nav-name {
     color: rgba(0, 0, 0, 0.918);
     text-decoration: none;
 }
 
-.nav_list{
+.nav_list {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: -65px;
-    margin-right:  60px;
+    margin-top: -48px;
+    margin-right: 60px;
 }
 
-.nav-header{
-margin-left: 50px;
+.nav-header {
+    margin-left: 50px;
 }
 
-.nav_link{
+.nav_link {
     color: rgb(15, 15, 15);
     text-decoration: none;
     font-weight: lighter;
 }
 
-#yaz{
-    background-color: rgba(135, 206, 250, 0.651);
+#yaz {
+    background-color: #e7c6ff;;
     margin: 15px;
     padding: 15px;
     border-radius: 100px;
     text-align: center;
 }
 
-/*=================== LOGIN ve REGISTER===================*/
-.login_body{
-    background-color: #e7c6ff;
+/*=================== LOGIN ve REGISTER ===================*/
+.login_body {
+    background-color: rgb(231, 198, 255);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-#login{
+#login {
     color: #a898d8;
     margin-top: 145px;
 }
 
-a{
+a {
     text-decoration: none;
     font-weight: bold;
     color: #a898d8;
 }
 
-.box{
+.box,
+.box2 {
     background-color: rgb(255, 248, 248);
     border-radius: 20px;
     text-align: center;
     align-content: center;
     height: 200px;
-    width: max-content;
-    padding: 20px 20px 20px 20px;
-    margin-left: 545px;
-    margin-top: 10px;
+    width: 300px; /* Alternatif: width: 80%; max-width: 400px; */
+    padding: 20px;
+    margin: 10px auto; /* Ortalanmış */
 }
 
-.box2{
-    background-color: rgb(255, 248, 248);
-    border-radius: 20px;
-    text-align: center;
-    align-content: center;
-    height: 200px;
-    width: max-content;
-    padding: 20px 30px 20px 30px;
-    margin-left: 550px;
-    margin-top: 10px;
-}
-
-.type{
+.type {
     border: 0px;
     padding-top: 10px;
     background-color: rgb(255, 248, 248);
     border-bottom: 2px solid #a898d8;
 }
 
-.go{
+.go {
     font-size: smaller;
 }
 
-#button{
+#button {
     background-color: #a898d8;
     color: white;
     text-align: center;
-    padding: 5px 70px 5px 70px;
+    padding: 5px 70px;
     font-size: 15px;
     border: 0px;
 }
 
- /*=================== Footer===================*/
+#çıkış{
+/* Merhaba enes hocam  */
 
-  
-  .footer {
-    background-color: rgba(135, 206, 250, 0.651);
+
+}
+
+/*=================== Footer ===================*/
+.footer {
+    background-color: rgb(231, 198, 255);;
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 14px;
     color: black;
     position: absolute;
     bottom: 0;
-  }
+}
+#button {
+    background-color: #a898d8;
+    color: white;
+    text-align: center;
+    padding: 5px 70px;
+    font-size: 15px;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* yumuşak geçiş */
+    border-radius: 10px;
+}
+
+#button:active {
+    transform: scale(0.95); /* basıldığında küçülme */
+    background-color: #9175d1; /* daha koyu bir mor tonu */
+}
+#button:hover {
+    background-color: #b3a4e6;
+}

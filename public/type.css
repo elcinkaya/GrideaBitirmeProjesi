@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: rgb(253, 252, 251);
     overflow: hidden;
   }
 
@@ -30,7 +30,7 @@ body {
 
   #editor {
     height: 250px;
-    background-color: #fff;
+    background-color: rgb(253, 252, 251);
   }
 
   .right-section {
@@ -60,7 +60,7 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background-color: #00796b;
+    background-color: #a898d8;;
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,5 +68,5 @@ body {
   }
 
   .right-section button:hover {
-    background-color: #00695c;
+    background-color: #a08ed8;;
   }
