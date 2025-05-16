@@ -1,6 +1,12 @@
+const { isAuthenticated } = require('../middlewares/authMiddleware');
+
+
 const express = require('express');
 const router = express.Router();
 const postController = require('../controllers/postController');
+const db = require('../db'); // db.js dosyasını çağırıyoruz
+
+
 
 router.get('/api/posts', postController.getAllPosts);
 router.get('/api/user-posts', postController.getUserPosts);
@@ -14,18 +20,20 @@ router.get('/posts/new', (req, res) => {
   });
   
   // Gönderi oluştur
-  router.post('/posts', (req, res) => {
-    if (!req.session.user) return res.redirect('/login');
-    
-    const { title, content, category } = req.body;
-    const userId = req.session.user.id;
-  
-    const sql = 'INSERT INTO posts (user_id, title, content, category) VALUES (?, ?, ?, ?)';
-    db.query(sql, [userId, title, content, category], (err, result) => {
-      if (err) return res.send('Veritabanı hatası');
-      res.redirect('/');
+  router.post('/posts', isAuthenticated, (req, res) => {
+    const { title, category, content } = req.body;
+    const user_id = req.session.user.id;
+
+    const sql = 'INSERT INTO posts (title, category, content, user_id) VALUES (?, ?, ?, ?)';
+    db.query(sql, [title, category, content, user_id], (err, result) => {
+        if (err) {
+            console.error('Gönderi eklenirken hata oluştu:', err);
+            return res.status(500).send('Bir hata oluştu, gönderi eklenemedi.');
+        }
+        res.redirect('/');
     });
   });
+
   
   // Gönderi detay
   router.get('/posts/:id', (req, res) => {
